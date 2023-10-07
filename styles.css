@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    margin-top: 100px;
+    width: 800px;
+    align-items: center;
+}
+
+.live {
+    border: 1px solid black;
+    padding: 10px 20px;
+    margin-right: 10px;
+    width: 120px;
+    font-size: 16px;
+    margin-left: 20px;
+}
+
+.punks {
+    border: 1px solid black;
+    padding: 10px 20px;
+    margin-right: 20px;
+    width: 120px;
+    font-size: 16px;
+
+}
+
+.title {
+    font-size: 30px;
+    margin-left: 80px;
+}
+
+.timer {
+    border: 1px solid black;
+    padding: 10px 20px;
+    margin-right: 20px;
+    width: 120px;
+    font-size: 16px;
+    margin-left: auto;
+}
+
+.listTile {
+    width: 440px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+}
+
+.tile {
+    border: 1px solid black;
+    width: 80px;
+    height: 80px;
+}
+
+.active {
+    background-color: green;
+}
+
+.playContainer {
+    width: 800px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.buttonContainer {
+    display: flex;
+    margin-top: 20px;
+    gap: 40px;
+}
+
+.start,
+.reset {
+    border: 1px solid black;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: transparent;
+    width: 120px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.start:hover,
+.start:focus,
+.reset:hover,
+.reset:focus {
+    background-color: #ccc;
+    cursor: pointer;
+}
