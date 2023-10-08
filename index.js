@@ -10,6 +10,7 @@ let currentTile = null;
 let interval = null;
 let timeInterval = null;
 let endTimeTimeout = null;
+let tileTimeout = null;
 let time = 60;
 let randomTile;
 let tileClicked = false;
@@ -28,7 +29,7 @@ const onStart = () => {
     randomTile = tiles[Math.floor(Math.random() * tiles.length)];
     randomTile.classList.add('active');
 
-    setTimeout(() => {
+    tileTimeout = setTimeout(() => {
       randomTile.classList.remove('active');
       if (!tileClicked) {
         lives--;
@@ -83,6 +84,7 @@ const clear = () => {
   currentTile = null;
   clearInterval(timeInterval);
   clearTimeout(endTimeTimeout);
+  clearTimeout(tileTimeout);
   time = 60;
   timeCounter.innerHTML = '';
   lives = 3;
