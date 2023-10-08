@@ -61,16 +61,7 @@ const chooseTile = e => {
     return;
   }
 
-  if (e.target !== currentTile) {
-    lives--;
-    alert('Straciłeś życie!');
-    livesCounter.innerHTML = lives;
-
-    if (lives === 0) {
-      alert('Straciłeś wszystkie życia. Koniec gry!');
-      clear();
-    }
-  } else {
+  if (e.target === currentTile) {
     punks++;
     tileClicked = true;
     e.target.classList.remove('active');
