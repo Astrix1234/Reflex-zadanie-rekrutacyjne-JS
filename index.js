@@ -6,6 +6,8 @@ const timeCounter = document.querySelector('.timeCounter');
 const livesCounter = document.querySelector('.liveCounter');
 const punksCounter = document.querySelector('.punksCounter');
 
+// console.log(tiles);
+
 let currentTile = null;
 let interval = null;
 let timeInterval = null;
